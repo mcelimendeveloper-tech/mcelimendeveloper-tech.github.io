@@ -1,0 +1,102 @@
+<div class="c-welcome">
+  <section class="c-welcome__banner">
+    <div class="c-welcome__banner__text">
+      <h1 class="c-welcome__banner__text__title">CAMISETAS DE FUTBOL</h1>
+      <p class="c-welcome__banner__text__subtitle">
+        Encuentra las mejores camisetas de futbol de tu equipo favorito
+      </p>
+      <a class="u-btn c-welcome__banner__text__button" href="catalogo"
+        >Ver mas...</a
+      >
+    </div>
+    <div class="c-welcome__banner__img">
+      <img
+        src="/static/assets/camisetas/seleccion-española.png"
+        alt="Camiseta principal"
+      />
+    </div>
+  </section>
+
+  <section class="c-welcome__cards u-container">
+    <p class="c-welcome__cards__title">Camisetas destacadas</p>
+    <div class="c-welcome__cards__items">
+      <div class="c-welcome__cards__items__item">
+        <img
+          (click)="goToCatalogWithFilter('Atlético Madrid','LaLiga','España',false)"
+          class="clickable-team"
+          src="/static/assets/camisetas/atletico-madrid.png"
+          alt="Camiseta principal"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item">
+        <img
+          (click)="goToCatalogWithFilter('FC Barcelona','LaLiga','España',false)"
+          class="clickable-team"
+          src="/static/assets/camisetas/fc-barcelona.png"
+          alt="Camiseta principal"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item">
+        <img
+          (click)="goToCatalogWithFilter('Atalanta','Serie A','Italia',false)"
+          class="clickable-team"
+          src="/static/assets/camisetas/atalanta.png"
+          alt="Camiseta principal"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item">
+        <img
+          (click)="goToCatalogWithFilter('PSG','Francia League 1','Francia',false)"
+          class="clickable-team"
+          src="/static/assets/camisetas/psg.png"
+          alt="Camiseta principal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="c-welcome__cards u-container">
+    <p class="c-welcome__cards__title">Camisetas por club</p>
+    <div class="c-welcome__cards__items">
+      <div class="c-welcome__cards__items__item-team">
+        <img
+          src="/static/assets/teams/real-madrid.png"
+          alt="Camiseta principal"
+          (click)="goToCatalogWithFilter('Real Madrid')"
+          class="clickable-team"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item-team">
+        <img
+          src="/static/assets/teams/fc-barcelona.png"
+          alt="Camiseta principal"
+          (click)="goToCatalogWithFilter('Real Madrid')"
+          class="clickable-team"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item-team">
+        <img
+          src="/static/assets/teams/manchester-city.png"
+          alt="Camiseta principal"
+          (click)="goToCatalogWithFilter('Real Madrid')"
+          class="clickable-team"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item-team">
+        <img
+          src="/static/assets/teams/milan.png"
+          alt="Camiseta principal"
+          (click)="goToCatalogWithFilter('Real Madrid')"
+          class="clickable-team"
+        />
+      </div>
+      <div class="c-welcome__cards__items__item-team">
+        <img
+          src="/static/assets/teams/psg.png"
+          alt="Camiseta principal"
+          (click)="goToCatalogWithFilter('Real Madrid')"
+        />
+      </div>
+    </div>
+  </section>
+</div>

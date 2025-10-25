@@ -1,0 +1,15 @@
+<header class="c-header">
+    <div class="c-header__logo">
+        <a class="c-header__logo__img"  href="/" ><img src="/static/assets/header/logo.png" alt="logo dz" title="logo dz" class="cabecera-img" title="Inicio"></a>
+    </div>
+    <nav class="c-header__links" [class.show]="isMenuOpen">
+        <a class="c-header__links__link" href="/">Inicio</a>
+        <a class="c-header__links__link" href="catalogo">Catálogo</a>
+    </nav>
+    <div class="c-header__toggle" (click)="toggleMenu()">
+        <span class="c-header__toggle__bar" [class.open]="isMenuOpen"></span>
+        <span class="c-header__toggle__bar" [class.open]="isMenuOpen"></span>
+        <span class="c-header__toggle__bar" [class.open]="isMenuOpen"></span>
+      </div>
+</header>
+<div class="overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>

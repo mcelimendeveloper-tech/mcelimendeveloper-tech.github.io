@@ -1,0 +1,54 @@
+<div class="c-filters u-container">
+  <label>
+    <p class="c-filters__title">Liga:</p>
+    <select [(ngModel)]="selectedLeague" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option *ngFor="let league of leagues">{{ league }}</option>
+    </select>
+  </label>
+
+  <label>
+    <p class="c-filters__title">Equipo:</p>
+    <select [(ngModel)]="selectedTeam" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option *ngFor="let team of teams">{{ team }}</option>
+    </select>
+  </label>
+
+  <label>
+    <p class="c-filters__title">Selección:</p>
+    <select [(ngModel)]="selectedNationalTeam" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option *ngFor="let nationalTeam of nationalTeams">{{ nationalTeam }}</option>
+    </select>
+  </label>
+
+  <label>
+    <p class="c-filters__title">Retro:</p>
+    <select [(ngModel)]="selectedRetro" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option value="true">Sí</option>
+      <option value="false">No</option>
+    </select>
+  </label>
+</div>
+
+<div class="c-advice u-container">
+  <div class="c-advice__container">
+    <img src="/static/assets/icons/warning.png" alt="warning">
+    <p>Este catálogo es una muestra de nuestro stock. Para realizar pedidos, consultar disponibilidad, tallas o precios, por favor, contáctenos directamente a través de nuestro perfil de Instagram: <a class="u-link" href="https://www.instagram.com/direct/t/17845404609591238" target="_blank">{{'@'}}zonadribling</a>. Todas las transacciones se gestionan de forma personalizada por mensaje directo (DM). ¡Esperamos tu mensaje!</p>
+  </div>
+</div>
+
+<div class="c-links u-container">
+  <div class="c-links__card" *ngFor="let product of filteredProducts">
+    <img [src]="product.img" [alt]="product.alt" class="c-links__card__img" />
+    <div class="c-links__card__body">
+      <h3 class="c-links__card__body__text">{{ product.texto }}</h3>
+      <div class="c-links__card__body__buttons">
+        <a class="u-btn" href="https://www.instagram.com/direct/t/17845404609591238" target="_blank" >CONTACTAR</a>
+        <!-- <a class="u-btn" [href]="product.url">COMPRAR</a> -->
+      </div>
+    </div>
+  </div>
+</div>
