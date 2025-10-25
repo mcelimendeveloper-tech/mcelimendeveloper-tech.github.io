@@ -1,6 +1,6 @@
 export const CAMISETAS = [
   {
-    img: 'zonadribling/static/assets/camisetas/monaco.png',
+    img: 'static/assets/camisetas/monaco.png',
     alt: 'Camiseta Mónaco',
     texto: 'Camiseta Mónaco',
     team: 'Mónaco',
@@ -9,7 +9,7 @@ export const CAMISETAS = [
     retro: false,
   },
   {
-    img: 'zonadribling/static/assets/camisetas/atletico-madrid.png',
+    img: 'static/assets/camisetas/atletico-madrid.png',
     alt: 'Atlético Madrid',
     texto: 'Camiseta Atlético Madrid',
     team: 'Atlético Madrid',
@@ -18,7 +18,7 @@ export const CAMISETAS = [
     retro: false,
   },
   {
-    img: 'zonadribling/static/assets/camisetas/fc-barcelona.png',
+    img: 'static/assets/camisetas/fc-barcelona.png',
     alt: 'FC Barcelona',
     texto: 'Camiseta FC Barcelona',
     team: 'FC Barcelona',
@@ -27,7 +27,7 @@ export const CAMISETAS = [
     retro: false,
   },
   {
-    img: 'zonadribling/static/assets/camisetas/psg.png',
+    img: 'static/assets/camisetas/psg.png',
     alt: 'PSG',
     texto: 'Camiseta PSG',
     team: 'PSG',
@@ -36,7 +36,7 @@ export const CAMISETAS = [
     retro: false,
   },
   {
-    img: 'zonadribling/static/assets/camisetas/atalanta.png',
+    img: 'static/assets/camisetas/atalanta.png',
     alt: 'Atalanta',
     texto: 'Camiseta Atalanta',
     team: 'Atalanta',
